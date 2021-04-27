@@ -1,0 +1,16 @@
+{
+  "name": "spread-operator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/spread-destructure.js",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "execute": "npm run build && node dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
