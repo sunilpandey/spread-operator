@@ -1,5 +1,5 @@
 # Spread operator and destructing in typescript
-This repository showcasing typescript spread operators usages possibilities in various diffrent scenarios.
+This repository showcases typescript spread operators usages possibilities in various diffrent scenarios. It also covers the destructing technique of arrays and objects
 ## Spread Operator Usages
 ### Copy array
 Copying one array data to another is possible by simply spreading the array to be copied.
@@ -10,7 +10,7 @@ Copying one array data to another is possible by simply spreading the array to b
     // Output: B (copied from a):  [ 1, 2, 3, 4 ]
 ```
 ### Copy Object
-Object copy is possible similiar to copy of array by providing object in object braces.
+Object copy is possible similiar to copy of array by providing object in object braces with spread operator.
 ```typescript
     const obj1 = {x: 10, y: 20};
     
@@ -20,7 +20,7 @@ Object copy is possible similiar to copy of array by providing object in object 
 ```
 
 #### Copy behaviour in case of multilevel objects
-Spread operator only create different copy of properties at first level. Second level onwards reference of properties got assigned in copeid object.
+Spread operator only create different copy of properties at first level. Second level onwards references of properties got assigned in copeid object. It can result in changing values at second level results in changes in both the objects.
 ```typescript
     const multiLevelObject = {x: 10, y: {m: 20, n: {b: 30}}};
     // Copy first level property only
@@ -73,8 +73,8 @@ If two merged object have common properties then last object properties values w
 ```
 
 ### Creating function with unlimited parameters
-Sometimes we get requirement of creating function which number of parameters can be specified in advance. Finding maximum value is one example of it.
-Spread operators helps in defining a method having unlimited number of arguments. I am going to present example of function which finds maximum number out of provided n numbers.
+Sometimes we get requirement of creating function which number of parameters can't be specified in advance. Finding maximum value is one example of it.
+Spread operators helps in defining a method having unlimited number of arguments very neatly. I am going to present example of function which finds maximum number out of provided n numbers.
 ```typescript
     // Unlimited parameters
     const maximumValue = (...numbers: number[]) => {
@@ -100,7 +100,7 @@ Array values can be destructure by providing names of variables inside array bra
     console.log(`${one} ${two} ${three} ${four}`);
     // Output: 1 2 3 4
 ```
-Here as you saw all the variables provided in sequence gets values of array accordingly. It is possible to have a mismatch number of variables left hand side. In such cases number remaining arrays values will be discarded
+Here as you saw all the variables provided in sequence gets values of array accordingly. It is possible to have a mismatch number of variables left hand side. In such cases remaining arrays values will be discarded
 ### Destructing object
 Object destructing is also possible in a similiar fashion just by replacing left hand side array bracket to object brackets. However names of variables should be similiar to the names of properties. Example is as followed
 
