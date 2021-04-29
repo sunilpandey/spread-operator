@@ -1,14 +1,14 @@
 const copyArray = () => {
-    let a = [1, 2, 3, 4];
-    let b = [...a];
+    const a = [1, 2, 3, 4];
+    const b = [...a];
     console.log("B (copied from a): ", b);
 }
 copyArray();
 
 const copyObject = () => {
-    let multiLevelObject = {x: 10, y: {m: 20, n: {b: 30}}};
+    const multiLevelObject = {x: 10, y: {m: 20, n: {b: 30}}};
     // Copy first level property only
-    let clonedMultiLevelObj = {...multiLevelObject};
+    const clonedMultiLevelObj = {...multiLevelObject};
     
     // Since copy is performed at first level, changing clonedMultiLevelObj.x cloned Obj doesn't change the multiLevelObject.x
     clonedMultiLevelObj.x = 40;
@@ -36,8 +36,6 @@ const concatObjects = () => {
     
     const obj3 = {...obj1, ...obj2}
     console.log(`Merged Object: ${JSON.stringify(obj3)}`);
-
-    // Object concatination with common properties
 }
 concatObjects();
 
@@ -64,7 +62,7 @@ const maximumValue = (...numbers: number[]) => {
     }, numbers[0]);
 }
 
-console.log(`Maximum value: ${maximumValue(50, 40, 30, 100, 60)}`, )
+console.log(`Maximum value: ${maximumValue(50, 40, 30, 100, 60)}`)
 
 //Descstructing
 const destructureArray = () => {
