@@ -112,4 +112,9 @@ Object destructing is also possible in a similiar fashion just by replacing left
     // Output: x: 10 y: 20
 ```
 
+## Running Application
+This is a node module application. It can be run with following steps
+* `npm install`
+* `npm run execute`
+
 Thanks for reading!
