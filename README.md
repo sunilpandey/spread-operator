@@ -111,6 +111,15 @@ Object destructing is also possible in a similiar fashion just by replacing left
     console.log(`x: ${x} y: ${y}`);
     // Output: x: 10 y: 20
 ```
+### Multi Level Object property destructing
+You can also destructer object properties which are deeper then one level by following way
+```typescript
+    const obj = {x: 10, y: {m: 20, n: {g: 30, h: 40}}};
+    
+    // Define the equivalent properties and list the variables inside the curly braces
+    const { y: {m, n: {g, h}} } = obj;
+    console.log(`m: ${m} g: ${g} h: ${h}`);
+```
 
 ## Running Application
 This is a node module application. It can be run with following steps

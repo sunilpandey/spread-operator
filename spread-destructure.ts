@@ -82,4 +82,12 @@ const destructureObject = () => {
 }
 destructureObject();
 
+const multiLevelDestructuring = () => {
+    const obj = {x: 10, y: {m: 20, n: {g: 30, h: 40}}};
+    
+    // Define the equivalent properties 
+    const { y: {m, n: {g, h}} } = obj;
+    console.log(`m: ${m} g: ${g} h: ${h}`);
 
+}
+multiLevelDestructuring();
