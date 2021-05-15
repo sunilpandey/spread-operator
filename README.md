@@ -1,6 +1,6 @@
 # Spread operator and destructing in typescript
 This repository showcases typescript spread operators usages possibilities in various diffrent scenarios. It also covers the destructing technique of arrays and objects
-## Spread Operator Usages
+## Spread operator Usages
 ### Copy array
 Copying one array data to another is possible by simply spreading the array to be copied.
 ```typescript
@@ -111,7 +111,7 @@ Object destructing is also possible in a similiar fashion just by replacing left
     console.log(`x: ${x} y: ${y}`);
     // Output: x: 10 y: 20
 ```
-### Multi Level Object property destructing
+### Multi level object property destructing
 You can also destructer object properties which are deeper then one level by following way
 ```typescript
     const obj = {x: 10, y: {m: 20, n: {g: 30, h: 40}}};
@@ -121,7 +121,7 @@ You can also destructer object properties which are deeper then one level by fol
     console.log(`m: ${m} g: ${g} h: ${h}`);
 ```
 
-## Running Application
+## Running application
 This is a node module application. It can be run with following steps
 * `npm install`
 * `npm run execute`
